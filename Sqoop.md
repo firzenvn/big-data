@@ -9,6 +9,8 @@ edit $JAVA_HOME/lib/security/java.policy, add to "grant" block to allow permissi
 
 permission org.apache.derby.security.SystemPermission "engine", "usederbyinternals";
 
+cp hive-common-3.1.2.jar $SQOOP_HOME/lib/
+
 #import example
 $SQOOP_HOME/bin/sqoop-import --connect jdbc:mysql://18.140.29.203:3306/adventureworksdw --username root --password root --driver com.mysql.jdbc.Driver \
 --table factinternetsales \
