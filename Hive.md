@@ -16,7 +16,8 @@ $HIVE_HOME/bin/hiveserver2 &
 s3-dist-cp --src=/user/hive/warehouse --dest s3://magestore-retail-assistant/user/hive/warehouse
 
 ### restore hive database from s3
-```CREATE TABLE KYLIN_ACCOUNT
+```
+CREATE TABLE KYLIN_ACCOUNT
 (
 ACCOUNT_ID bigint
 ,ACCOUNT_BUYER_LEVEL int COMMENT 'Account Buyer Level'
